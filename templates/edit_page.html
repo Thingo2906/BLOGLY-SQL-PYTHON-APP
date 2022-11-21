@@ -9,26 +9,28 @@
 </head>
 <body>
     <h1>Edit a User</h1>
-    <form method="POST">
+    <form id ="edit_user" method="POST">
         <p>
             <label>First Name
                 <input type="text" name="first_name" value="{{ user.first_name }}">
             </label>
         </p>
         <p>
-            <label>
+            <label>Last Name
                 <input type="text" name="last_name" value = "{{ user.last_name }}">
             </label>
         </p>
         <p>
-            <label>
+            <label>Image URL
                 <input type="text" name="image_url" value="{{ user.image_url }}">
             </label>
         </p>
-        <p>
-            <button href="/users">Cancel</button>
-            <button type="submit">Save</button>
-        </p>
+
+            <button id = "cancel_edit" href="/users">Cancel</button>
+            <button id = "save_edit" type="submit">Save</button>
+
+
+        
     </form>
 
     
